@@ -1,0 +1,146 @@
+body {
+    background-color: aquamarine;
+    scroll-behavior: smooth;
+    font-family: 'Dancing Script', cursive;
+    font-size: 200%;
+}
+#mySidenav a {
+    position: absolute;
+    right: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color:darkslategray;
+    border-radius: 0 5px 5px 0;
+  }
+
+  #symb {
+    font-size: 60px;
+  }
+  
+  #mySidenav a:hover {
+    right: 0;
+  }
+  
+  #about {
+    top: 20px;
+    border: 2px solid black;
+    background-color: aquamarine;
+  }
+  #projects {
+    top: 80px;
+    border: 2px solid black;
+    background-color: aquamarine;
+  }
+  
+  #contact {
+    top: 140px;
+    border: 2px solid black;
+    background-color: aquamarine;
+  }
+
+select {
+    position: absolute;
+    right: 0;
+    top: 1;
+    width: 100px;
+    height: 20px;
+    background-color: aquamarine;
+    color:darkslategray ;
+    border: 2px solid darkslategray ;
+    border-radius: 20px;
+    padding: 1px 2px 2px 2px;
+}
+
+h4 {
+    margin-top: 40px;
+    margin-left: 20px;
+    color:darkslategray;
+}
+#scroll {
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+#about_me{
+    color: darkslategray;
+    text-align: center;
+    animation: about_me 2s ease-in-out; 
+
+}
+#me {
+  width: 300px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 10px;
+  animation: me 2s ease-in-out;
+  box-shadow: 4px 4px 4px darkslategray;
+  border-radius: 20%;
+}
+@keyframes me {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/*#me:hover {
+  animation: zoom-move 1s;
+}
+
+@keyframes zoom-move {
+  from {
+    transform: scale(1) translate(0, 0);
+  }
+
+  to {
+    transform: scale(1.2) translate(10px, 10px);
+  }
+}*/
+
+
+
+@keyframes about_me {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+a {
+  color: black;
+}
+a:hover {
+  font-size: 120%;
+  color: black;
+}
+
+#project {
+    color: darkslategray;
+    display: flex;
+    justify-content:space-evenly;
+    animation: about_me 4s ease-in-out;
+    
+}
+   
+
