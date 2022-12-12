@@ -1,3 +1,8 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: aquamarine;
     scroll-behavior: smooth;
@@ -33,6 +38,7 @@ body {
     top: 80px;
     border: 2px solid black;
     background-color: aquamarine;
+    scroll-behavior: smooth;
   }
   
   #contact {
@@ -64,6 +70,7 @@ h4 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  scroll-behavior: smooth;
  
 }
 
