@@ -2,19 +2,26 @@
 html {
   /*scroll-behavior: smooth;*/
   box-sizing: border-box;
+ /* width: 100%;
+  height: 100%;*/
 }
-
+h1 {
+  color: rgb(8, 76, 97) ;
+}
 body {
     background-color:rgb(230, 250, 245);
-    scroll-behavior: smooth;
-    font-family: 'Dancing Script', cursive;
+    
+    
     font-size: 200%;
+    
 }
 
 p {
-  box-sizing: border-box;
+  /*box-sizing: border-box;
   display: block;
-  animation: about_me 5s ease-in-out;
+  animation: about_me 5s ease-in-out;*/
+  font-family: 'Poppins', sans-serif;
+  color: rgb(8, 76, 97);
 }
 
   
@@ -48,17 +55,30 @@ p {
   display: flex;
   justify-content: center;
 }
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(8, 76, 97);
+
+}
 
 #mySidenav a {
-    position: absolute;
-    right: -80px;
+    
+    
+    
+    margin-top: 0px;
+    margin-right: 10px;
+  
     transition: 0.3s;
-    padding: 15px;
+    
+    padding: 10px;
     width: 100px;
     text-decoration: none;
     font-size: 20px;
     color:rgb(8, 76, 97);
     border-radius: 0 5px 5px 0;
+    border-color: rgb(230, 250, 245); ;
   }
 
   #symb {
@@ -66,7 +86,7 @@ p {
   }
   
   #mySidenav a:hover {
-    right: 0;
+    
     background-color:rgb(8, 76, 97);
     color: rgb(230, 250, 245);
   }
@@ -80,13 +100,17 @@ p {
     top: 80px;
     border: 2px solid black;
     background-color: rgb(230, 250, 245);
-    scroll-behavior: smooth;
+   
   }
   
   #contact {
     top: 140px;
     border: 2px solid black;
     background-color: rgb(230, 250, 245);
+  }
+  #icons {
+    height: 100px ;
+    width: 100px;
   }
 
 select {
@@ -105,7 +129,8 @@ select {
 h4 {
     margin-top: 0px;
     margin-left: 20px;
-    color:darkslategray;
+    color: rgb(230, 250, 245);
+    font-family: 'Dancing Script', cursive;
 }
 #scroll {
   position: relative;
@@ -121,24 +146,25 @@ h4 {
 }
 
 #about_me{
-    color: rgb(8, 76, 97);;
+    color: rgb(8, 76, 97);
     text-align: left;
     animation: about_me 5s ease-in-out; 
     animation-duration: 3s;
     padding-top: 5px;
     margin-left: 5px;
+    font-family: 'Poppins', sans-serif;
 
 }
 #me {
   width: 300px;
   height: 400px;
   display: block;
-  
-  margin-right: 20px;
+  margin-top: 60px;
+  margin-right: 60px;
   animation: me 2s ease-in-out;
   animation-duration: 3s;
   box-shadow: 4px 4px 4px darkslategray;
-  border-radius: 20%;
+ 
 }
 @keyframes me {
   0% {
@@ -193,12 +219,15 @@ a:hover {
 #heading {
   display: ab;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(8, 76, 97);
 }
 #project {
-    color: darkslategray;
+    color:  rgb(8, 76, 97);
     display: flex;
     justify-content:space-evenly;
     animation: about_me 4s ease-in-out;
+    font-family: 'Poppins', sans-serif;
     
 }
    
