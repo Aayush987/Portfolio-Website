@@ -140,7 +140,7 @@ h4 {
 }
 #container {
   display: flex;
-  justify-content:space-around;
+  justify-content:space-evenly;
 }
 
 #about_me{
@@ -154,6 +154,7 @@ h4 {
 
 }
 #me,#me:before {
+  width: 100%;
   width: 300px;
   height: 400px;
   display: block;
@@ -230,7 +231,7 @@ a:hover {
 #project {
     color:  rgb(8, 76, 97);
     display: flex;
-    
+    flex-direction: row;
     justify-content:space-evenly ;
     animation: about_me 4s ease-in-out;
     font-family: 'Poppins', sans-serif;
@@ -267,4 +268,33 @@ a:hover {
 }
 #gmail {
    background-color: white;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 100%;
+    text-align: center;
+  }
+  #project {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  #title {
+    font-size: 200%;
+   
+  }
+ 
+
+
 }
