@@ -14,6 +14,7 @@ body {
     
 }
 
+
 p {
   /*box-sizing: border-box;
   display: block;
@@ -60,6 +61,7 @@ p {
     background-color: rgb(8, 76, 97);
 
 }
+
 
 #mySidenav a {
     
@@ -228,6 +230,7 @@ a:hover {
   color:rgb(230, 250, 245);
   background-color: rgb(8, 76, 97);;
 }
+
 #project {
     color:  rgb(8, 76, 97);
     display: flex;
@@ -274,6 +277,7 @@ a:hover {
   body {
     font-size: 100%;
     text-align: center;
+    margin: 5px;
   }
   #project {
     display: flex;
@@ -284,17 +288,46 @@ a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: space-around;
+    
+  }
+  #mySidenav a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   #header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-bottom: 10px;
   }
   #title {
-    font-size: 200%;
+    font-size: 150%;
    
   }
- 
+  #me {
+    margin: 20px 40px;
+    height: 350px;
+    width: 300px;
+    align-self: center;
+  }
+ #socials {
+  margin: 10px;
+ }
+ .fa {
+  padding: 15px;
+  font-size: 80px;
+  height: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 2px;
+  border-radius: 50%;
+}
+
+
 
 
 }
