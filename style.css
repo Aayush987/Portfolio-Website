@@ -9,7 +9,7 @@ body {
      background-color:rgb(230, 250, 245); 
     margin: 10px;
 
-    
+    user-select: none;
     font-size: 200%;
     
 }
@@ -50,6 +50,7 @@ p {
   background: rgb(65, 64, 64);
   color: white;
 }
+
 #socials {
   display: flex;
   justify-content: center;
@@ -173,6 +174,18 @@ h4 {
 
 }
 
+#resume {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: darkslategray;
+        padding: 20px;
+}
+#resume > h1 {
+     font-size: 60px;
+}
  
 @keyframes me {
   0% {
@@ -234,11 +247,18 @@ a:hover {
 #project {
     color:  rgb(8, 76, 97);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content:space-evenly ;
-    animation: about_me 4s ease-in-out;
-    font-family: 'Poppins', sans-serif;
     
+    font-family: 'Poppins', sans-serif;
+}
+#project > div {
+  border: 5px solid darkslategray;  
+  border-radius: 10%;
+  box-shadow: 2px 22px 60px 0px rgba(8,76,97,0.85);
+  padding: 10px;
+  animation: about_me 4s ease-in-out;
+  margin: 5px;
 }
 #about1 {
   border: none;
