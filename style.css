@@ -5,15 +5,43 @@ html {
  
 }
 
-body {
-     background-color:rgb(230, 250, 245); 
-    margin: 10px;
-
-    user-select: none;
-    font-size: 200%;
-    
+#about-me 
+{
+  color: rgb(8, 76, 97);
 }
 
+body {
+     /* background-color:rgb(230, 250, 245);  */
+    margin: 10px;
+    /* background: radial-gradient(circle farthest-corner at center center, #78ffd8 0%, #005cff 80%); */
+    background: linear-gradient(to right, #33ccff 19%, #008080 100%);
+    user-select: none;
+    font-size: 200%;
+    overflow-x: hidden;
+    color:rgb(8, 76, 97);
+    
+}
+#tech-stack 
+{
+  border: 5px solid #008080;
+}
+
+main 
+{
+  max-height: 100vh;
+   scroll-snap-type: y mandatory;
+   
+}
+.hidden
+{
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 2s ease;
+}
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 p {
   /*box-sizing: border-box;
@@ -22,7 +50,11 @@ p {
   font-family: 'Poppins', sans-serif;
   /* color: rgb(8, 76, 97); */
 }
-
+#title 
+{
+  color: rgb(8, 76, 97);
+  font-weight: bolder;
+}
   
 
 .fa {
@@ -37,6 +69,7 @@ p {
 
 .fa:hover {
     opacity: 0.7;
+    scale: 1.2;
 }
 .fa-twitter {
   background: #55ACEE;
@@ -59,11 +92,22 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(8, 76, 97);
+    /* background-color: rgb(8, 76, 97); */
+    background: linear-gradient(to right, #33ccff 19%, #008080 100%);
 
 }
 
-
+#foot 
+{
+    display: flex;
+    flex-direction: row; 
+}
+#me3 
+{
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
 #mySidenav a {
     
     
@@ -86,9 +130,21 @@ p {
     font-size: 60px;
   }
   
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+  }
+  
   #mySidenav a:hover {
     
-    background-color:rgb(8, 76, 97);
+    background-color:#008080;
     color: rgb(230, 250, 245);
   }
   
@@ -133,6 +189,7 @@ h4 {
     color: rgb(230, 250, 245);
     font-family: 'Dancing Script', cursive;
 }
+
 #scroll {
   position: relative;
   text-align: center;
@@ -165,7 +222,7 @@ h4 {
   margin-right: 60px;
   animation: me 2s ease-in-out;
   animation-duration: 3s;
-  box-shadow: 2px 2px 2px 2px darkslategray;
+  /* box-shadow: 2px 2px 2px 2px darkslategray;` */
   
 }
 #me:hover{
@@ -182,6 +239,8 @@ h4 {
         justify-content: center;
         color: darkslategray;
         padding: 20px;
+        border: 5px solid #008080;
+        box-shadow: 2px 22px 60px 0px rgba(8,76,97,0.85);
 }
 #resume > h1 {
      font-size: 60px;
@@ -201,9 +260,7 @@ h4 {
   }
 }
 
-/*#me:hover {
-  animation: zoom-move 1s;
-}
+
 
 @keyframes zoom-move {
   from {
@@ -213,9 +270,24 @@ h4 {
   to {
     transform: scale(1.2) translate(10px, 10px);
   }
-}*/
+}
 
-
+@keyframes scalee {
+  0% 
+  {
+    scale: 1;
+  }
+  
+  50% 
+  {
+    scale: 1.3;
+  }
+  
+  100% 
+  {
+    scale: 1;
+  }
+}
 
 @keyframes about_me {
   0% {
@@ -241,7 +313,8 @@ a:hover {
 #headline {
   text-align: center;
   color:rgb(230, 250, 245);
-  background-color: rgb(8, 76, 97);;
+  /* background-color: rgb(8, 76, 97); */
+  background: linear-gradient(to right, #33ccff 19%, #008080 100%);
 }
 
 #project {
@@ -261,7 +334,8 @@ a:hover {
   margin: 5px;
 }
 #about1 {
-  border: none;
+  border: 5px solid #008080;
+  box-shadow: 2px 22px 60px 0px rgba(8,76,97,0.85);
 }
 #pro {
   box-shadow: 2px 2px 2px 2px darkslategray;
@@ -277,16 +351,20 @@ a:hover {
   border: 5px solid  rgb(8, 76, 97);
   padding: 2px;
 }
-#desc:hover {
+/* #desc:hover {
   transition: 0.3s;
   background-color:rgb(8, 76, 97);
   color: rgb(230, 250, 245);
   transition: 0.3s;
-}
+} */
 #Contacts{
-  color:  rgb(230, 250, 245); 
-  background-color: rgb(8, 76, 97);
+  border: 5px solid #008080;
+  color:  rgb(8, 76, 97);
+  background: linear-gradient(to right, #33ccff 19%, #008080 100%);
+  box-shadow: 2px 22px 60px 0px rgba(8,76,97,0.85);
   padding: 5px;
+  margin: 0;
+  font-weight: bold;
    
 }
 #gmail {
@@ -329,6 +407,15 @@ a:hover {
     justify-content: space-around;
     
   }
+  
+  .menu-icon {
+    display: block;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
   #mySidenav a{
     display: flex;
     flex-direction: column;
@@ -336,13 +423,24 @@ a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  #foot 
+  {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #me3 
+  {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    
+  }
   #header {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-evenly;
     padding: 10px;
-    
-   
   }
   #title {
     font-size: 150%;
