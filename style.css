@@ -620,6 +620,8 @@ a{
   color:  rgb(8, 76, 97);
 }
 a:hover {
+  transition: 0.3s;
+  box-shadow: 4px 4px 4px 4px darkslategray;
   color: rgb(230, 250, 245);
   background-color:  rgb(8, 76, 97);
 }
