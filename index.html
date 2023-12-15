@@ -22,10 +22,16 @@
    <div id = "header">
       <h4 id = "title"><span id = "symb">&lt;</span> Aayush Sharma /<span id = "symb">&gt;</span></h4>
    <div id="mySidenav" class="sidenav">
-      <div class="menu-icon" id="menu-icon">
-         <div class="bar"></div>
-         <div class="bar"></div>
-         <div class="bar"></div>
+      <div id="hamburger-menu">
+         <input id="menu__toggle" type="checkbox" />
+         <label class="menu__btn" for="menu__toggle">
+           <span></span>
+         </label>
+         <ul class="menu__box">
+           <li><a class="menu__item" href="#about1">About</a></li>
+           <li><a class="menu__item" href="#project">Projects</a></li>
+           <li><a class="menu__item" href="#Contacts">Contact</a></li>
+         </ul>
        </div>
        <div class="nav-links" id="nav-links">
       <a href="#about1" id="about">About</a>
@@ -42,11 +48,13 @@
                   <span class="javascript-property">name:</span> <span class="javascript-string">'Aayush Sharma',</span>
                </p>
                <p>
-                  <span class="javascript-property">title:</span> <span class="javascript-string">'Web Developer',</span>
+                  <span class="javascript-property">title:</span> <span class="javascript-string">'Full Stack Developer',</span>
                </p>
-                  <p class="hero-description">Hello, I'm Aayush Sharma, a dedicated frontend web developer with a passion for creating exceptional online experiences. I thrive on turning ideas into interactive and user-friendly web applications. Aspiring to be a problem-solving software developer, I'm always eager to take on new challenges and learn new technologies.</p>
+                  <p class="hero-description">Passionate about crafting robust and user-friendly<br> web applications that leave a lasting impact.<br> Let's build something amazing together!</p>
          </div> 
-         <img id = "me" src = "Images/profile.svg">
+         <div>
+         <iframe src="https://lottie.host/embed/ca7ab568-426a-45f2-b422-c86a6ff1c946/cYb3XvZN7a.json"></iframe>
+         </div>
       </div>
       <div id = "socials">
          <a href="https://twitter.com/Aayush47163" target="_blank" class="fa fa-twitter"></a>
@@ -70,30 +78,13 @@
    <section class = "hidden">   
    <div id="about1" class="javascript-section tracking-in-contract-bck">
       <h1 class="javascript-keyword">const aboutMe = {</h1>
-      <p>
-         <span class="javascript-property">passion:</span> <span class="javascript-string">'Driven by a passion for technology and innovation, I am a prefinal year student pursuing a Bachelor\'s degree in Information Technology.',</span>
-      </p>
-      <p>
-         <span class="javascript-property">curiosity:</span> <span class="javascript-string">'My journey in the world of IT has been marked by a relentless curiosity to explore new horizons, particularly in the realms of web development and DevOps.',</span>
-      </p>
-      <p>
-         <span class="javascript-property">thrive:</span> <span class="javascript-string">'I thrive on turning ideas into tangible digital solutions, with a keen eye for crafting user-friendly and efficient websites.',</span>
-      </p>
-      <p>
-         <span class="javascript-property">contributor:</span> <span class="javascript-string">'Beyond academics, I am an active contributor to the open-source community, where I collaborate with like-minded individuals to create impactful software solutions.',</span>
-      </p>
-      <p>
-         <span class="javascript-property">goal:</span> <span class="javascript-string">'My goal is to continually expand my skill set and knowledge base, staying at the forefront of emerging technologies and industry trends.',</span>
-      </p>
-      <p>
-         <span class="javascript-property">teamwork:</span> <span class="javascript-string">'I believe in the power of teamwork and enjoy collaborating with diverse teams to tackle complex challenges and deliver exceptional results.',</span>
-      </p>
-      <p>
-         <span class="javascript-property">hobbies:</span> <span class="javascript-string">'When I'm not coding or working on projects, you can find me exploring the latest tech news, experimenting with new coding languages, or simply enjoying a good book.',</span>
-      </p>
-      <p>
-         <span class="javascript-property">commitment:</span> <span class="javascript-string">'I am committed to lifelong learning and strive to make a positive impact through technology, both academically and professionally.'</span>
-      </p>
+      <div id="aboutme">  
+      <img src="./Images/me4.png" alt="Myphoto">
+      <p> Hello there! 👋 I'm Aayush Sharma, a passionate and dedicated 
+         Web Developer based in New Delhi. With a strong background in 
+         development, I bring creativity and innovation to every project 
+         I undertake. I also love solving problems and learning new things. <br> <br> Besides coding, I enjoy playing video games, listening to music.</p>
+      </div>
       <h1 id="closing-brace" class="javascript-keyword">};</h1>
    </div>
 </section>
@@ -252,7 +243,7 @@
    <h1 id = "headline">Contact Me</h1>
    <div id = "foot">
    <p class = "footer">Thank You for visiting my website.You can reach out to me at my socials or can mail me also.</p>
-   <img  id = "me3" src ="Images/me.jpg" alt="profile-photo">
+   <!-- <img  id = "me3" src ="Images/me.jpg" alt="profile-photo"> -->
    </div>
    <div id="socials" class="javascript-section">
       <a href="https://twitter.com/Aayush47163" target="_blank" class="fa fa-twitter"></a>
@@ -267,5 +258,6 @@
    </section>
    </main>
   <script src = "script.js"></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </body>
 </html>
